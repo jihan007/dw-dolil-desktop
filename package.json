@@ -1,10 +1,11 @@
 {
-  "name": "electron-updater-example",
-  "version": "0.8.1",
+  "name": "DolilSheba",
+  "version": "1.0.0",
   "main": "main.js",
-  "description": "electron-updater example project",
-  "author": "Matt Haggard",
+  "description": "Desktop App for dolil.com",
+  "author": "Dolil.com",
   "scripts": {
+    "start": "electron .",
     "publish": "electron-builder -p always"
   },
   "devDependencies": {
@@ -17,7 +18,7 @@
     "electron-updater": "^4.3.9"
   },
   "build": {
-    "appId": "com.github.iffy.electronupdaterexample",
+    "appId": "com.github.dolil",
     "afterSign": "./build/notarize.js",
     "mac": {
       "category": "your.app.category.type"
