@@ -70,10 +70,13 @@ function createDefaultWindow() {
   win.on('closed', () => {
     win = null;
   });
-  win.loadURL(`file://${__dirname}/version.html#v${app.getVersion()}`);
-  //win.loadURL("https://dw.dolil.com");
+  //win.loadURL(`file://${__dirname}/version.html#v${app.getVersion()}`);
+  win.loadURL("https://dw.dolil.com");
   return win;
 }
+
+
+
 autoUpdater.on('checking-for-update', () => {
   sendStatusToWindow('Checking for update...');
 })
